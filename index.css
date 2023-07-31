@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.container{
+
+}
+
+
+nav{
+	background-color: green;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 60px;
+	height: 5em;
+	align-items: center;
+}
+
+nav > button{
+	border: none;
+	width: 10em;
+	height: 3em;
+	border-radius: 10px;
+	background-color: orange;
+	color: white;
+	font-size: 1em;
+	font-weight: bold;
+	transition: 0.5s ease;
+}
+
+nav > button:hover{
+	background-color: white;
+	color: orange;
+}
+nav > h3{
+	color: white;
+
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.popOut{
+	width: 500px;
+	height: 40%;
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	left: 40%;
+	border: none;
+	outline: none;
+	transform: translate(-20%, -50%) scale(0.1);
+	visibility: hidden;
+	transition:  transform 0.4s, top 0.4s;
+	
+}
+
+.popIn{
+	visibility: visible;
+	top: 50%;
+	transform: translate(-20%, -50%) scale(1);
+}
+
+
+
+form > div{
+	margin: 5px;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	
+}
+
+form  > h3{
+	color: white;
+	font-size: 2em;
+}
+
+div > input{
+	padding: 10px;
+}
+
+div > span{
+	font-style: italic;
+}
+
+div > button{
+	padding: 10px;
+	border: none;
+	outline: none;
+	color: white;
+	background-color: green;
+	margin-top: 20px;
+	width: 100%;
+}
+#card{
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+.divContent{
+	background-color: orange;
+	width: 25%;
+	height: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.divContent > h1{
+	color: White;
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+
+.divContent > p{
+	color: green;
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+
+.divContent > span{
+	color: white;
+	margin-top: 20px;
+
+}
+
+.divContent > span{
+	color: white;
+	margin-top: 20px;
+}
+
+.divContent > button{
+	width: 10em;
+	height: 2em;
+	border-radius: 20px;
+	margin-top: 10px;
+	border: none;
+	background-color: green;
+	color: white;
+}

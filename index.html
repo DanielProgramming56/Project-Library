@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script  src="index.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Library</title>
+
+</head>
+<body>
+	<div class="container"">
+		<nav>
+		<h3>BOOK Libray</h3>
+		<button onclick="openPop()">NEW BOOK</button>
+		</nav>
+		<div   id="popOut" class="popOut">
+			
+			<form style="position: relative;" >
+				<h3>Create A New Book</h3>
+				<div onclick="closePop()" style="background: green; position: absolute; right: -27%; top: -7%; width: 50px; display: flex; justify-content: center; border-radius: 50%; height: 50px; cursor: pointer;">
+					<span style="text-align: center; font-size: 24px; font-weight: bold; ">X</span>
+				</div>
+				<div>
+				<label for="title">Book Title</label>
+				<input type="text"  name="title" id="title" required>
+			</div>
+			<div>
+				<label for="author">Book Author</label>
+				<input type="text"  name="author" id="author" required>
+			</div>
+				<div>
+					<label for="pages">Book Pages</label>
+				<input type="number"  min="0" name="pages" id="pages" required>
+				</div>
+				<div style="display: flex; justify-content: center; align-items: center;">
+					<span>Have Your Read These Book Before</span>
+					<input  style="width: 30px; height: 30px; margin-top: 20px;" type="checkbox" id="read">
+					<button type="button" id="buttonPower">Create Book</button>
+				</div>
+			</form>
+			
+		</div>
+		<div id="card">
+			
+		</div>
+	</div>
+</body>
+</html>
